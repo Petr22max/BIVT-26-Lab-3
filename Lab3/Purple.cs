@@ -33,27 +33,27 @@ namespace Lab3
             double average = 0;
 
             // code here
-            int sum = 0;
+            int s = 0;
             for (int i = 0; i < n; i++)
             {
-                bool two = false;
+                bool f = false;
                 for (int j = 0; j < 4; j++)
                 {
                     int x = int.Parse(Console.ReadLine());
-                    sum += x;
+                    s += x;
                     if (x == 2)
                     {
-                        two = true;
+                        f = true;
                     }
                 }
-                if (two)
+                if (f)
                 {
                     count++;
                 }
             }
             if (n > 0)
             {
-                average = (double)sum / (n * 4);
+                average = (double)s / (n * 4);
             }
             // end
 
