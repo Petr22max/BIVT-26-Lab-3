@@ -13,20 +13,16 @@ namespace Lab3
             {
                 double x = double.Parse(Console.ReadLine());
                 double y = double.Parse(Console.ReadLine());
-
                 double d = Math.Sqrt(x * x + y * y);
-
                 if (d >= r1 && d <= r2)
                 {
                     count++;
                 }
             }
-
             // end
 
             return count;
         }
-
         public (int count, double average) Task2(int n)
         {
             int count = 0;
@@ -59,7 +55,6 @@ namespace Lab3
 
             return (count, average);
         }
-
         public double Task3(int exams)
         {
             double avgMark = 0;
@@ -85,7 +80,6 @@ namespace Lab3
 
             return avgMark;
         }
-
         public (string solution, int attempts) Task4(int code, int limit)
         {
             string solution = "Код не подобран";
@@ -128,7 +122,6 @@ namespace Lab3
 
             return (solution, attempts);
         }
-
         public double Task5(int a, int n)
         {
             double luck = 0;
