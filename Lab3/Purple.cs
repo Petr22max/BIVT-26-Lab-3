@@ -96,9 +96,19 @@ namespace Lab3
             {
                 attempts++;
                 int x = int.Parse(Console.ReadLine());
+                if (x == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
                 int y = int.Parse(Console.ReadLine());
+                if (y == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
                 int z = int.Parse(Console.ReadLine());
-                if (x == -1 || y == -1 || z == -1)
+                if (z == -1)
                 {
                     solution = "Аварийный выход!";
                     break;
