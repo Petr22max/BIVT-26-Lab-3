@@ -92,7 +92,38 @@ namespace Lab3
             int attempts = 0;
 
             // code here
-
+            for (int i = 0; i < limit; i++)
+            {
+                attempts++;
+                int x = int.Parse(Console.ReadLine());
+                if (x == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
+                int y = int.Parse(Console.ReadLine());
+                if (y == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
+                int z = int.Parse(Console.ReadLine());
+                if (z == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
+                int a = x * 100 + y * 10 + z;
+                if (a == code)
+                {
+                    solution = "Доступ разрешен!";
+                    break;
+                }
+            }
+            if (solution == "Код не подобран")
+            {
+                solution = "Система заблокирована!";
+            }
             // end
 
             return (solution, attempts);
