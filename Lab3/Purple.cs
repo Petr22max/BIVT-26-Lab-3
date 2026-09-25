@@ -66,25 +66,21 @@ namespace Lab3
 
             // code here
             for (int i = 0; i < exams; i++)
-{
-    int a = int.Parse(Console.ReadLine());
-    int b = int.Parse(Console.ReadLine());
-
-    double x = a * 0.4 + b * 0.6;
-
-    if (x > 85)
-        avgMark += 5;
-    else if (x > 70)
-        avgMark += 4;
-    else if (x > 50)
-        avgMark += 3;
-    else
-        avgMark += 2;
-}
-
-if (exams > 0)
-    avgMark /= exams;
-
+            {
+                int a = int.Parse(Console.ReadLine());
+                int b = int.Parse(Console.ReadLine());
+                double x = a * 0.4 + b * 0.6;
+                if (x > 85)
+                    avgMark += 5;
+                else if (x > 70)
+                    avgMark += 4;
+                else if (x > 50)
+                    avgMark += 3;
+                else
+                    avgMark += 2;
+            }
+            if (exams > 0)
+                avgMark /= exams;
             // end
 
             return avgMark;
