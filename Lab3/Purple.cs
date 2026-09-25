@@ -34,34 +34,27 @@ namespace Lab3
 
             // code here
             int sum = 0;
-
-for (int i = 0; i < n; i++)
-{
-    bool two = false;
-
-    for (int j = 0; j < 4; j++)
-    {
-        int x = int.Parse(Console.ReadLine());
-
-        sum += x;
-
-        if (x == 2)
-        {
-            two = true;
-        }
-    }
-
-    if (two)
-    {
-        count++;
-    }
-}
-
-if (n > 0)
-{
-    average = (double)sum / (n * 4);
-}
-
+            for (int i = 0; i < n; i++)
+            {
+                bool two = false;
+                for (int j = 0; j < 4; j++)
+                {
+                    int x = int.Parse(Console.ReadLine());
+                    sum += x;
+                    if (x == 2)
+                    {
+                        two = true;
+                    }
+                }
+                if (two)
+                {
+                    count++;
+                }
+            }
+            if (n > 0)
+            {
+                average = (double)sum / (n * 4);
+            }
             // end
 
             return (count, average);
