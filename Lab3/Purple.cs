@@ -9,6 +9,18 @@ namespace Lab3
             int count = 0;
 
             // code here
+            for (int i = 0; i < n; i++)
+            {
+    double x = double.Parse(Console.ReadLine());
+    double y = double.Parse(Console.ReadLine());
+
+    double d = Math.Sqrt(x * x + y * y);
+
+    if (d >= r1 && d <= r2)
+    {
+        count++;
+    }
+            }
 
             // end
 
